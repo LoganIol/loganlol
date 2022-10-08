@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +38,24 @@ div.middle-div {
   cursor: pointer;
   border-radius: 5px;
 }
+button {
+    background-color: white;
+  font-family: "fun";
+  border: none;
+  color: black;
+  padding: 1.5vh 3vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12.5px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 .button:hover {
+  background-color: #F5F5F5;
+}
+button:hover {
   background-color: #F5F5F5;
 }
 #backgroundban {
@@ -122,8 +138,8 @@ border-collapse:collapse;
             <div class='middle-div'>
                 <center>
                     <a href="https://loganlol.xyz" class="button">Home</a>
-                    <a href="#" class="button">About</a>
-                    <a href="#" class="button">Contact</a>
+                    <button onclick="contacts()" class="button">About</button>
+                    <button onclick="contacts()" class="button">Contact</button>
                     <a href="https://discord.com/oauth2/authorize?client_id=707048634751123477&scope=bot%20applications.commands&permissions=2146958847" class="button">Invite Bot</a>
                 </center>
             </div>
@@ -153,6 +169,16 @@ border-collapse:collapse;
         Discord: Loganlol#0001<br>
         Email: logan@loganlol.xyz<br><br><br>
     </center></div>
+<script>
+    profile = document.getElementById("headerstuffs")
+    contact = document.getElementById("contact")
+    function profiles() {
+    profile.scrollIntoView();
+    }
+    function contacts() {
+    contact.scrollIntoView();
+    }
+</script>
 </div>
 </body>
 </html>
